@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-Wallet Jaib</title>
+    <link rel="stylesheet" href="Custem.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="/home">من نحن</a></li>
+        <li><a href="/products">رؤيتنا</a></li>
+        <li><a href="/about">رسالتنا</a></li>
+      </ul>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">من نحن</a>
+        </li>
+        <li>
+          <a href="#">رؤيتنا</a>
+        </li>
+        <li>
+          <a href="#">رسالتنا</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="brinsh1"></div>
+      <div class="brinsh2"></div>
+    </div>
+    <div class="container">
+      <div id="height"></div>
+      <div class="night">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+      <!-- <div class="height"></div> -->
+      <div class="main_text">
+        <h2 id="text1">نقرة &nbsp<s>واحدة</s></h2>
+        <h2 id="text2">بتـــــــسهــــ<s>ــــل كل حياتك</s></h2>
+        <h2 id="text2">شغـــــ<s>ــالين عليها</s></h2>
+      </div>
+      <h1 id="text5">...قريبا</h1>
+      <h1 id="text6">ابطالنا يعملون</h1>
+
+      <h1 id="text3">نهار</h1>
+      <h1 id="text4">ليل</h1>
+      <div class="light"></div>
+      <div class="light1"></div>
+      <div class="image_main"></div>
+      <div class="light_mobile">
+        <div class="wire"></div>
+        <div class="lamp">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="switch">
+          <div class="btn"></div>
+        </div>
+      </div>
+      <img src="images/logo.png" alt="Jaib" class="logo" />
+    </div>
+    <script type="text/javascript">
+      var pos = document.documentElement;
+      pos.addEventListener("mousemove", (e) => {
+        pos.style.setProperty("--x", e.clientX + "px");
+        pos.style.setProperty("--y", e.clientY + "px");
+      });
+      let btn = document.querySelector(".btn");
+      let light = document.querySelector(".light_mobile");
+      btn.onclick = function () {
+        light.classList.toggle("on");
+      };
+      function toggleMobileMenu(menu) {
+        menu.classList.toggle("open");
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
